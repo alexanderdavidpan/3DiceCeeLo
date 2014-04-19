@@ -1,0 +1,22 @@
+body { 
+  width: 250px; 
+  margin: auto; 
+  margin-top: auto; 
+}
+
+h1 { 
+  font-family: Helvetica;
+}
+
+div.dice {
+  float:left;
+  display: inline;
+}
+
+p {
+  font-family: Helvetica;
+}
+
+li { 
+  font-family: Helvetica;
+}
