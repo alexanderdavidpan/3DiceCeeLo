@@ -6,7 +6,6 @@ var playerCounter = 1;
 
 $(document).ready(function(){
   $('#pot').append("Pot: " + pot);
-})
 
 function rollDice() {
   var roll = Math.floor(Math.random() * 6) + 1;
@@ -78,7 +77,6 @@ function playGame() {
     var highScore = 0;
     var winner = [];
 
-    $(document).ready(function(){
       $('#roll').click(function(){
         playGame();
         if (playerCounter > playerNum) {
