@@ -6,13 +6,17 @@ var playerCounter = 1;
 
 $(document).ready(function(){
   $('#pot').append("Pot: " + pot);
-})
 
 function rollDice() {
+  var roll = Math.floor(Math.random() * 6) + 1;
+  return roll
+}
+
+function playGame() {
   $('#outcome').empty();
-  var d1 = Math.floor(Math.random() * 6) + 1;
-  var d2 = Math.floor(Math.random() * 6) + 1;
-  var d3 = Math.floor(Math.random() * 6) + 1;
+  var d1 = rollDice();
+  var d2 = rollDice();
+  var d3 = rollDice();
   die1.innerHTML = '<img src="img/dice' + d1 + '.png">';
   die2.innerHTML = '<img src="img/dice' + d2 + '.png">';
   die3.innerHTML = '<img src="img/dice' + d3 + '.png">';
@@ -73,9 +77,8 @@ function rollDice() {
     var highScore = 0;
     var winner = [];
 
-    $(document).ready(function(){
       $('#roll').click(function(){
-        rollDice();
+        playGame();
         if (playerCounter > playerNum) {
         //check for winner
         for (var i=1; i < parseInt(playerNum) + 1; i++){
