@@ -30,4 +30,4 @@
 <p>All contributions are welcome.</p>
 
 <h2>License</h2>
-<p>Copyright (C) 2014 Alexander Pan</p>
+<p>Copyright &copy; 2014 Alexander Pan. All rights reserved.</p>
